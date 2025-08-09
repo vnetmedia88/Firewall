@@ -49,9 +49,16 @@ sudo systemctl enable fail2ban
 ```bash
 sudo fail2ban-client status
 sudo fail2ban-client status sshd
-n
 
 ```
+
+## 6: Cek log status fail2ban
+
+```bash
+sudo tail -f /var/log/fail2ban.log
+
+```
+
 
 ✅ Tambahan Proteksi (Opsional)
 Aktifkan UFW firewall + whitelist port penting (SSH, WireGuard, dll).
