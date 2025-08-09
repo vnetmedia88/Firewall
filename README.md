@@ -58,7 +58,17 @@ sudo fail2ban-client status sshd
 sudo tail -f /var/log/fail2ban.log
 
 ```
+Cek log sistem SSH (misal untuk login gagal/penyusup)
+```bash
+sudo grep "Failed password" /var/log/auth.log
 
+
+```
+lihat log banned IP di Fail2Ban:
+```bash
+sudo tail -f /var/log/fail2ban.log
+
+```
 
 ✅ Tambahan Proteksi (Opsional)
 Aktifkan UFW firewall + whitelist port penting (SSH, WireGuard, dll).
